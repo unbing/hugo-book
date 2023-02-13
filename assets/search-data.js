@@ -23,7 +23,7 @@
   {{ range $index, $page := $pages }}
   index.add({
     'id': {{ $index }},
-    'href': '{{ $page.RelPermalink }}',
+    'href': '{{ $page.Permalink }}',
     'title': {{ (partial "docs/title" $page) | jsonify }},
     'section': {{ (partial "docs/title" $page.Parent) | jsonify }},
     'content': {{ $page.Plain | jsonify }}
