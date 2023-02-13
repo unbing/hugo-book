@@ -47,7 +47,7 @@
     input.required = true;
 
     loadScript('{{ "flexsearch.min.js" | relURL }}');
-    loadScript('{{ $searchData.RelPermalink }}', function () {
+    loadScript('{{ $searchData.Permalink }}', function () {
       input.required = false;
       search();
     });
